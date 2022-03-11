@@ -1,0 +1,10 @@
+{
+    "require": {
+        "monolog/monolog": "^2.3",
+        "ext-json": "*",
+        "ext-zlib": "*",
+        "team-reflex/discord-php": "^7.0",
+        "more-cores/discord-message-builder": "^3.0",
+        "vlucas/phpdotenv": "^5.4"
+    }
+}
