@@ -10,7 +10,7 @@ use Discord\WebSockets\Event;
 use Discord\Builders\MessageBuilder;
 
 $discord = new Discord([
-    'token' => getenv('BOT_TOKEN'),
+    'token' => getenv('BOT_TOKEN')
 ]);
 
 
@@ -23,7 +23,6 @@ $discord->on('ready', function (Discord $discord) {
     $discord->on(Event::MESSAGE_CREATE, function (Message $message, Discord $discord) use($builder){
         if ($message->author->bot) return;
         echo "{$message->author->username}: {$message->content}", PHP_EOL;
-        
     });
 });
 
